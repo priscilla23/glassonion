@@ -1,0 +1,190 @@
+body {
+  font-family: Roboto 300 Light;
+}
+h1 {
+  font-family: Droid Sans 700;
+  font-size: 26px;
+}
+h2 {
+  font-family: Droid Sans 700;
+  font-size: 26px;
+}
+h3 {
+  font-family: Droid Sans 700;
+  font-size: 26px;
+}
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+/***boxshadow***/
+/***transition***/
+/***transform***/
+/***gradient****/
+/***reflect axis****/
+body {
+  background-color: #000000;
+}
+.container {
+  background: #000000;
+  width: 960px;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: #ffffff 1px solid;
+  border-top: none;
+  padding: 15px;
+}
+header {
+  background: #000000;
+  height: 70px;
+  display: inline;
+  float: left;
+  width: 940px;
+  margin: 0 10px;
+}
+header ul {
+  list-style: none;
+  float: right;
+  margin-top: 25px;
+}
+header ul li {
+  width: 60px;
+  display: inline-block;
+  list-style: none;
+}
+header ul li a {
+  color: #2bb293;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+header ul li a:hover {
+  opacity: 0;
+}
+article.maincolumn {
+  background: #000000;
+  height: 465px;
+  display: inline;
+  float: left;
+  width: 620px;
+  margin: 0 10px;
+}
+article.maincolumn h1 {
+  font-size: 50px;
+}
+article.maincolumn h1:hover {
+  font-style: italic;
+}
+article.maincolumn a {
+  color: #3cbdc8;
+  text-decoration: none;
+}
+h1,
+h2,
+p {
+  text-align: center;
+}
+section.sidebar {
+  background: #333333;
+  height: 465px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 8px 8px 8px rgba(33, 33, 33, 0.6);
+  -moz-box-shadow: 8px 8px 8px rgba(33, 33, 33, 0.6);
+  box-shadow: 8px 8px 8px rgba(33, 33, 33, 0.6);
+  display: inline;
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+}
+section.sidebar h2 {
+  padding: 20px 10px;
+  color: #2bb293;
+  font-family: Droid Sans 700;
+}
+section.sidebar p {
+  color: #999999;
+  padding: 10px;
+  font-family: Roboto 300 Light;
+}
+footer {
+  padding: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline;
+  float: left;
+  width: 940px;
+  margin: 0 10px;
+}
+footer p {
+  color: #d44072;
+  height: 75px;
+}
+/**** ABOUT PAGE ****/
+article#mainabout img:hover {
+  -webkit-transform: rotate(5deg) scale(0.7) skew(2deg) translate(0px);
+  -moz-transform: rotate(5deg) scale(0.7) skew(2deg) translate(0px);
+  -o-transform: rotate(5deg) scale(0.7) skew(2deg) translate(0px);
+  -ms-transform: rotate(5deg) scale(0.7) skew(2deg) translate(0px);
+  transform: rotate(5deg) scale(0.7) skew(2deg) translate(0px);
+  display: inline;
+  float: left;
+  width: 620px;
+  margin: 0 10px;
+}
+article#mainabout h1 {
+  font-style: none;
+  color: #3cbdc8;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, transparent), to(rgba(255, 255, 255, 0.2)));
+}
+article#mainabout h1:hover {
+  font-style: normal;
+}
+section#about {
+  background-color: #333300;
+  background-image: -webkit-linear-gradient(left, #333300, #666600);
+  background-image: -moz-linear-gradient(left, #333300, #666600);
+  background-image: -o-linear-gradient(left, #333300, #666600);
+  background-image: -ms-linear-gradient(left, #333300, #666600);
+  background-image: linear-gradient(left, #333300, #666600);
+}
+section#about p {
+  color: #898989;
+}
+/***TOUR PAGE ***/
+article#tour h1 {
+  color: #393939;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, transparent), to(rgba(255, 255, 255, 0.2)));
+}
+article#tour h1:hover {
+  font-style: normal;
+}
+section#tourdates {
+  background-color: #990000;
+  background-image: -webkit-linear-gradient(left, #990000, #000000);
+  background-image: -moz-linear-gradient(left, #990000, #000000);
+  background-image: -o-linear-gradient(left, #990000, #000000);
+  background-image: -ms-linear-gradient(left, #990000, #000000);
+  background-image: linear-gradient(left, #990000, #000000);
+}
+section#tourdates h2 {
+  color: #ffffff;
+}
+section#tourdates li {
+  color: #2bb293;
+  text-align: center;
+}

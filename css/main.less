@@ -1,21 +1,139 @@
 @import 'styles/brand.less';
 @import 'styles/typography.less';
 @import 'styles/grid.less';
+@import 'styles/mixins.less';
 
+body{
+	background-color:@color1;
+}
 .container {
+  background:@color1;
   width: 960px;
+  height:600px;
   margin: 0 auto;
   overflow: hidden;
+ .border();
 }
-
 header {
+	background:@color1;
+	height:70px;
   .column(12);
+	ul{
+		list-style: none;
+		float:right;
+		margin-top:25px;
+
+		li{
+		width:60px;
+		display:inline-block;
+		list-style:none;
+			a{
+				color:@color3;
+				text-decoration: none;
+				.transition(all, 0.5s, ease-in);
+			}
+			a:hover{
+				opacity: 0;
+			}
+		}
+	}
 }
 
-article#maincolumn {
+article.maincolumn {
+	background:@color1;
+	height:465px;
   .column(8);
+
+  	h1{
+  		font-size: @headingonefontsize;
+		}
+	h1:hover{
+		font-style: italic;
+	}
+  		a{
+  			color:@color2;
+  			text-decoration: none;
+  		}
 }
 
-sidebar#sidebar {
+h1, h2,p{
+  		text-align: center;
+  	}
+section.sidebar {
+	background:@color7;
+	height:465px;
+	.border-radius(15px);
+	.box-shadow(8px,8px,8px,0.6);
   .column(4);
+  h2{
+  	padding:20px 10px;
+  	color:@color3;
+  	font-family:@headingfontfamily;
+  }
+
+  p {
+  	color:@basefontcolor;
+  	padding:10px;
+  	font-family: @bodyfontfamily;
+  }
 }
+
+footer{
+	padding:50px;
+	.box-sizing(border-box);
+	.column(12);
+	p{
+		color:@color6;
+		height:75px;	
+	}
+}
+
+/**** ABOUT PAGE ****/
+article#mainabout{
+	img:hover{
+		.transform(5deg,0.7,2deg,0px);
+		.column(8);
+		}
+	h1{
+		font-style: none;
+		color:@color2;
+		.reflect(20%,0.2);
+	}
+	h1:hover{
+		font-style:normal;
+	}
+	
+}
+section#about{
+	 .gradient(left, #330, #660);	
+	p{
+		color:@color4;	
+	}
+}
+
+/***TOUR PAGE ***/
+article#tour{
+	h1{
+		color:@color5;
+		.reflect(20%,0.2);
+	}
+	h1:hover{
+		font-style: normal;
+	}
+
+}
+
+section#tourdates {
+	.gradient(left, #990000, #000);
+	h2{
+		color:@color10;
+	}
+	li{
+		color:@color3;
+		text-align: center;
+		
+	}
+
+}
+
+
